@@ -1,0 +1,198 @@
+/* Styles généraux pour le corps de la page */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Styles pour le bouton du menu hamburger */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Styles pour la barre latérale */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Styles pour la barre latérale lorsqu'elle est active */
+.sidebar.active {
+    width: 250px;
+}
+
+/* Styles pour la liste dans la barre latérale */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styles pour chaque élément de la liste */
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles pour les liens dans la barre latérale */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Styles pour les liens au survol */
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Styles pour le contenu principal */
+.content {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Style pour le logo */
+.logo img {
+    max-width: 150px; /* Ajustez la taille selon vos besoins */
+    height: auto; /* Conserve les proportions de l'image */
+    display: block; /* Assure que l'image se comporte comme un bloc */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.art-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.art-caption {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.art-price {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.art-other {
+    font-size: 0.9em;
+    color: #777;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.gallery {
+    margin-bottom: 40px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.art-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about,
+.contact {
+    margin-bottom: 40px;
+}
+
+.about h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #575757;
+}
+.social-icons {
+    display: flex; /* Affiche les icônes sur une seule ligne */
+    justify-content: center; /* Centre les icônes horizontalement */
+}
+.social-icon {
+    margin: 0 10px; /* Ajoute un espace entre les icônes */
+    color: #fff; /* Couleur des icônes */
+    font-size: 25px; /* Taille des icônes */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur au survol */
+}
+
+.social-icon:hover {
+    color: rgb(114,165,168); /* Couleur des icônes au survol */
+}
+/* Pied de page */
+footer {
+    background: url('images/p2.jpg') no-repeat center center; /* Image de fond */
+    background-size: cover; /* L'image couvre entièrement */
+    color: white; /* Couleur du texte */
+    padding: 10px 0; /* Espacement vertical */
+    text-align: center; /* Centre le texte */
+}
